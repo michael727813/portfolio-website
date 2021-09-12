@@ -80,13 +80,34 @@ a:focus {
     background-color: #000000;
     color: #ffffff;
   }
-  .social-icon {
-    width: 24px;
-    height: 24px;
-    display: block;
-    margin: 14px 8px 12px 0;
-    color: #3f3f3f;
-    background-color: #f0f0f0;
+  #social ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 0em;
+    line-height: 0;
+    margin: 18px 0;
+  }
+  
+  #social li {
+    display: inline;
+  }
+  
+  #social a,
+  #social a:visited,
+  #social a:hover,
+  #social a:active,
+  #social a:focus {
+    text-decoration: none;
+    color: transparent;
+    line-height: 0%;
+  }
+  
+  #social img {
+    height: 48px;
+    width: auto;
+    opacity: 0.8;
+    padding: 12px;
+    margin: 0 4px;
   }
   
   /* Layout styling */
@@ -180,34 +201,11 @@ nav > ul > li {
 
 nav > ul > li > a {
   padding: 0 8px;
-  text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   color: #4a4a4a;
   background-color: #fff;
   display: inline-block;
   text-align: right;
-}
-
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-
-.navtoggle.responsive li {
-  display: block;
-  text-align: end;
-}
-
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 16px;
-  font-size: 20px;
-  margin-bottom: 2px;
-}
-
-.navtoggle.responsive nav {
-  padding: 45px 0 0;
-  float: right;
 }
 .social-icon {
   width: 24px;
@@ -216,46 +214,109 @@ nav > ul > li > a {
   margin: 14px 8px 12px 0;
   color: #3f3f3f;
   }
-/* ==============================
-Medium devices (640px and larger)
-================================= */
-@media only screen and (min-width: 640px) {
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
-  }
 
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
-}
-#hero span {
-  display: block;
-}
-.col-md-6 {
-  width: 50%;
-}
-[class*="col-"] {
-  float: left;
-}
-[class*="col-"] {
-  float: left;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-@keyframes color-change {
-  from {fill: #e6e6e6;}
-  to {fill: #535353;}
-}
-.sun {
+  @keyframes color-change {
+    from {fill: #F58220;}
+    to {fill: #03577A;}
+  }
+.dolphin {
   animation-duration: 4s;
   animation-name: color-change;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
+}
+@keyframes phin-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.phin-front {
+  animation: 10s phin-move infinite alternate linear;
+}
+@keyframes phin-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.phin-back {
+  animation: 14s phin-move-reverse infinite alternate linear;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px;
+  }
+  body {
+    font-size: 18px;
+  }
+  nav {
+    width: auto;
+    float: center;
+    text-align: center;
+    margin-top: 4px;
+  }
+  #hero span {
+    display: block;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  [class*="col-"] {
+    float: left;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  #about-page h3 { margin-top: 0;}
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+  
+  .navtoggle.responsive li {
+    display: block;
+    text-align: end;
+  }
+  
+  .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 16px;
+    font-size: 20px;
+    margin-bottom: 2px;
+  }
+  
+  .navtoggle.responsive nav {
+    padding: 45px 0 0;
+    float: right;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  #hero span {
+    display: block;
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+
 }
