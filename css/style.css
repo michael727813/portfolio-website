@@ -31,19 +31,11 @@ body {
   img {
     width: 100%;
   }
-  a {
-    color: #000000;
-    text-decoration: none; /* No underlining */
-  }
-  a:hover {
-    color: #1f1f1f;
-    text-decoration: underline; /* Underlining when hovering over a link */
-  }
-  a:visited { /* visited link */
-    color: #000000;
-  }
-  a:active { /* selected link */
-    color: #000000;
+  a:hover,
+  a:focus,
+  a:active {
+    color: #000;
+    text-decoration: underline;
   }
   a:hover,
 a:focus {
@@ -116,19 +108,17 @@ a:focus {
     margin-left: auto;
     margin-right: auto;
   }
-  
+ 
   .containernav {
     padding-left: 26px;
     padding-right: 22px;
     overflow: auto;
   }
-  
+  main {
+    padding-top: 56px;
+  }
   .row {
     margin: 24px 0;
-    /* 24px top and bottom, 0 left and right */
-  }
-  .ul_margin {
-    margin-left: 24px;
     /* 24px top and bottom, 0 left and right */
   }
   
@@ -158,8 +148,8 @@ a:focus {
   }
   
   .logo {
-    max-width: 200px;
-    margin-top: 8px;
+    max-width: 150px;
+    display: inline-block;
   }
   
   #contact {
@@ -182,34 +172,42 @@ a:focus {
   .social-bottom {
     display: flex;
   }
-nav {
-  display: inline-block;
-}
+  
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+  
+  .navtoggle {
+    position: relative;
+  }
+  
+  .navtoggle li .menuicon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+  }
+  
+  .navtoggle.responsive nav {
+    padding: 12px 0 0;
+  }
+  
+  .navtoggle.responsive li {
+    display: block;
+    text-align: right;
+    padding: 10px 0;
+    border-top: 1px solid #797979;
+  }
+  
+  .navtoggle.responsive li:last-child {
+    padding: 0;
+  }
 
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-  display: inline-block;
-}
-
-nav > ul > li {
-  display: inline-block;
-}
-
-.navtoggle,
-.navtoggle.responsive {
-  position: relative;
-  margin-bottom: -8px;
-}
-
-nav > ul > li > a {
-  padding: 0 8px;
-  font-weight: 500;
-  color: #4a4a4a;
-  background-color: #fff;
-  display: inline-block;
-  text-align: right;
-}
 .social-icon {
   width: 24px;
   height: 24px;
@@ -253,19 +251,37 @@ nav > ul > li > a {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  nav {
+    width: auto;
+    float: right;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+    padding: 10px 24px 0;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
   header {
     text-align: unset;
     padding: 20px;
   }
+
   body {
     font-size: 18px;
   }
   nav {
     width: auto;
     float: center;
-    text-align: center;
     margin-top: 4px;
   }
+  
   #hero span {
     display: block;
   }
