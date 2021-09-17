@@ -1,12 +1,75 @@
 body {
-    background-color: #ffffff;
     font-family: 'roboto', sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.5;
     color: #4a4a4a;
   }
+  .logo {
+    max-width: 150px;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 2.5em;
+    
+  }
   
+  nav {
+    display: inline-block;
+    width: 100%;
+    color: #000000
+  }
+  
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+    color: #000000
+  }
+  
+  nav > ul > li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    color: #000000
+  }
+  
+  nav > ul > li > a {
+    display: inline-block;
+    padding: 0 15px;
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+  
+  .navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
+  
+  /* our hamburger menu */
+  .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+  }
+  
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+  
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(165, 165, 165, 0.5);
+  }
+  
+  .navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+  }
   h1, h2, h3, h4 {
     line-height: 1.4;
   }
@@ -147,11 +210,6 @@ a:focus {
     display: block;
   }
   
-  .logo {
-    max-width: 150px;
-    display: inline-block;
-  }
-  
   #contact {
     padding-top: 16px;
     margin-top: 48px;
@@ -173,41 +231,6 @@ a:focus {
     display: flex;
   }
   
-  nav > ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .navtoggle li:not(:last-child) {
-    display: none;
-  }
-  
-  .navtoggle {
-    position: relative;
-  }
-  
-  .navtoggle li .menuicon {
-    position: absolute;
-    right: 0;
-    top: 2px;
-    font-size: 20px;
-  }
-  
-  .navtoggle.responsive nav {
-    padding: 12px 0 0;
-  }
-  
-  .navtoggle.responsive li {
-    display: block;
-    text-align: right;
-    padding: 10px 0;
-    border-top: 1px solid #797979;
-  }
-  
-  .navtoggle.responsive li:last-child {
-    padding: 0;
-  }
-
 .social-icon {
   width: 24px;
   height: 24px;
@@ -216,11 +239,6 @@ a:focus {
   color: #3f3f3f;
   }
 
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-  }
   @keyframes color-change {
     from {fill: #F58220;}
     to {fill: #03577A;}
@@ -250,15 +268,21 @@ a:focus {
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
   nav {
     width: auto;
     float: right;
+    margin-top: 4px;
   }
 
   nav > ul > li {
     display: inline-block;
-    padding: 10px 24px 0;
+    position: relative;
   }
 
   .navtoggle li:not(:last-child) {
@@ -268,18 +292,9 @@ Medium devices (640px and larger)
   .navtoggle li:last-child {
     display: none;
   }
-  header {
-    text-align: unset;
-    padding: 20px;
-  }
 
   body {
     font-size: 18px;
-  }
-  nav {
-    width: auto;
-    float: center;
-    margin-top: 4px;
   }
   
   #hero span {
