@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!DOCTYPE HTML>
+<html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,43 +22,55 @@
 				  <!-- open mobile menu toggle div -->
 				  <a href="index.html" class="logo"><strong>Michael Akins</strong> UX/UI</a>
 				  <!-- Name as hyperlink instead of logo image -->
-				  <nav class="navigation">
+				  <nav>
 					<ul>
-						<li><a class="navLinks" href="index.html">Work</a></li>
-						<li><a class="navLinks" href="about.html">About</a></li>
-						<li><a class="navLinks" href="files/Resume.pdf"
-						  target="_blank" onclick="menuToggle()">Resume</a></li>
+					  <li class="brackets"><a href="index.html">Work</a></li>
+					  <li class="brackets"><a href="about.html">About</a></li>
 					  <li class="brackets">
-						<a href="#contact" onclick="menuToggle()">Contact</a></li>
-						<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
-							<i class="fas fa-bars"></i>
-						  </a>
-						</li>
-					  </ul>
-					</nav>
-				  </div>
+						<a
+						  href="files/Resume.pdf"
+						  target="_blank"
+						  onclick="menuToggle()"
+						  >Resume</a
+						>
+					  </li>
+					  <li class="brackets">
+						<a href="#contact" onclick="menuToggle()">Contact</a>
+					  </li>
+					  <li>
+						<a
+						  href="javascript:void(0);"
+						  class="icon"
+						  onclick="menuToggle()"
+						  ><i class="fas fa-bars"></i
+						></a>
+					  </li>
+					</ul>
+				  </nav>
 				</div>
-			  </header> <!--End Header-->
-		<main>
-			<div id="hero">
-				<div class="container" style="background-image:img_bg_image.jpeg;">
-					<h1>Hi, my name is Michael Akins.<span>I'm a UI/UX designer in Tampa!</span></h1>
-				<p>I’m a UX/UI/Visual designer skilled at empathizing with people and creating user-centric design solutions. I have over 15 years of print and digital/web design experience at in-house creative departments and design firms. I’m passionate about designing for users, and my background in graphic design helps me develop aesthetically pleasing and satisfying product experiences and solutions.</p>
 			</div>
-		  </div>
+        </header>
+                    <!--End Header-->
+	<main>
+  		<div id="hero">
+			<div class="container">
+	  			<h1>Hello, My name is Michael Akins. I’m a UX/UI designer from the greater Tampa Bay area.</h1>
+				<p>I’m a UX/UI/Visual designer skilled at empathizing with people and creating user-centric design solutions. I have over 15 years of print and digital/web design experience at in-house creative departments and design firms. I’m passionate about designing for users, and my background in graphic design helps me develop aesthetically pleasing and satisfying product experiences and solutions.
+				</p>
+    		</div>
+  		</div>
 		<!-- For your work/projects -->
-    <!-- For your work/projects -->
-    <div id="work">
-		<div class="container">
-		  <h2>Featured Work</h2>
-		  <div class="row">
-			<div class="column col-md-6 col-lg-7">
-				<picture>
-					<source srcset="img/sneaker/featured_600px.jpg" media="(max-width:767px)">
-					<img src="img/sneaker/featured_1200px.jpg" alt="Sneake Store Featured Image">
-				</picture>
-			</div>
-			<div class="column col-md-6 col-lg-5">
+			<div class="container">
+				<h2>Featured Work</h2>
+				<div class="row">
+					<div class="column col-md-6 col-lg-7">
+						<picture>
+							<img src="img/sneaker/featured_600px.jpg" media="(max-width:600px)">
+							<img src="img/sneaker/featured_1200px.jpg" alt="Sneake Store Featured Image">
+						</picture>
+					</div>
+				</div>
+				<div class="column col-md-4 col-lg-5">
 					<h3>Sneaker Store</h3>
 					<h4>Designing An Online Store</h4>
 					<p><strong>The Problem</strong><br>
@@ -66,32 +78,33 @@
 						</p>
 						<p><strong>The Solution</strong><br>
 							To solve this problem, I designed a native app to meet the needs of Sneaker Store’s customers. With so many online sneaker stores, it will be great to have an app that gives its users a customizable experience with their needs in mind.</p>
-							<a href="sneaker.html" class="button">View Case Study</a>
+							<a href="sneaker.html" class="button">View Case Study
+						</a><!-- button or link label -->
 						</div>
-					</div>
-					<div class="row">
-					  <!-- open row that holds (2) columns for project -->
-					  <div class="column col-md-6 col-lg-7">
-						<!-- open first column (used for image) -->
-						<picture>
-						  <source srcset="img/bstyle/featured_600px.jpg" media="(max-width:767px)">
-						  <img src="img/bstyle/featured_1200px.jpg" alt="Classifind Hero">
-						</picture>
-					  </div><!-- end first column -->
-					  <div class="column col-md-6 col-lg-5">
-						<!-- open second column (used for text) -->
+					
+					<div>
+						<div class="row">
+							<div class="column col-md-6 col-lg-7">
+			  				<picture>
+								  <source src="img/bstyle/b_style-featured.jpg" media="(max-width:767px)">
+								  <source src="img/bstyle/b_style-featured@1x.jpg" alt="Sneake Store Featured Image">
+			  				</picture>
+						</div>
+		  			<div class="column col-md-6 col-lg-5">
 						  <h3>Book&Style</h3>
 						  <h4>Designing a Native IOS App</h4><!-- heading for the project -->
 						  <p><strong>The Problem</strong>
 							<br>There are numerous of competitive salon booking apps on the market that offer a lot of features, but they are very hard to navigate. The experience of booking a good barber or finding a new barbershop can be discouraging and time consuming. Most consumer’s need an app they trust that.</p>
 						<p><strong>The Solution</strong>
 							<br>To solve this problem, I designed Book&Style, a barbershop booking app built for busy, on-to go users that don’t want to spend a lot of time planning their next hair appointment. Book&Style is a native mobile app that can be used to discover new barhops, read reviews, or easily book appointments with your favorite barber.
-						</p><!-- end paragraph -->
-						<a href="#" class="button">View Case Study</a><!-- button or link label -->
-					</div><!-- end second column -->
-				  </div><!-- end row that holds (2) columns for project -->
-				  <div class="row">
-					<div class="column col-sm-12 col-md-6 col-lg-7">
+						</p>
+						<a href="#" class="button">View Case Study</a>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="row">
+					<div class="column col-md-6 col-lg-7">
 						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 				viewBox="0 0 799 565.3" style="enable-background:new 0 0 799 565.3;" xml:space="preserve">
 				<style type="text/css">
