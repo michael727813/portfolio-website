@@ -268,8 +268,7 @@ main {
 
 #hero {  
   
-  /* background-image: url('https://github.com/michael727813/portfolio-website/blob/main/img/bg_image.jpeg?raw=true'); */
-  background-image: url('file:///Users/michaelakins/Documents/TRAINING/CareerFoundary/Frontend%20Development%20for%20Designers/Portfolio%20Site%20Michael/img/bg_image.jpeg');
+background-image: url('https://github.com/michael727813/portfolio-website/blob/main/img/bg_image.jpeg?raw=true');
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-size: cover;
