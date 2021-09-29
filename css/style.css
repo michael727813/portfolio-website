@@ -23,7 +23,7 @@ h1,
 h2,
 h3,
 h4 {
-  line-height: 1.4;
+  line-height: 1.3;
 }
 
 
@@ -49,16 +49,13 @@ h4 {
   font-weight: 400;
 }
 
-code {
-  background-color: black;
-  color: #b4d455;
-  padding: 5px;
+.white {
+  color: #fff;
 }
 
 /* general image responsive sizing */
 img {
   width: 100%;
-  border-radius: 10px;
 }
 
 /* Links */
@@ -83,14 +80,11 @@ footer {
 }
 
 /* custom logo sizing */
-.logo {
-  max-width: 150px;
-  font-size: 18px;
-  color: #000;
-  text-decoration: none;
-  font-weight: 500;
-  line-height: 2.5em;
-}
+  .logo {
+    min-width: 250px;
+    max-width: 300px;
+    height: auto;
+  }
 
 nav {
   display: inline-block;
@@ -120,13 +114,12 @@ main {
 }
 
 .navLinks {
-  padding: 5px;
+  padding-right: 5px;
 }
 
 .navLinks:hover,
 .navLinks:focus {
-  color: #ee9733;
-  border-radius: 10px;
+  color: #8b8b8b;
 }
 
 .navLinks:visited {
@@ -135,66 +128,41 @@ main {
 
 .navLinks:active {
   /* selected link */
-  color: #ee9733;
+  color: #000;
   font-weight: 700;
 }
 
-/* general buttons */
 
-.btnContact {
-  background-color: transparent;
-  color: #ffffff;
-  border: 2px solid #ffffff;
-  padding: 10px;
-  border-radius: 10px;
-  transition: 0.4s opacity, 0.5s background-color, 0.4s font-size;
-  text-decoration: none;
-}
-
-.btnContact:hover {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-.btnResume {
-  background-color: transparent;
-  color: #7051ef;
-  text-transform: uppercase;
-  border: 2px solid #ff7f50;
-  padding: 10px;
-  border-radius: 3px;
-  transition: 0.4s opacity, 0.5s background-color, 0.4s font-size;
-}
-
-.btnResume:hover {
-  background-color: #7051ef;
-  color: #ffffff;
-}
-
-.social-icons {
-  text-align: center;
-  display: inline-block;
+#social ul {
   list-style-type: none;
-  width: 50px;
-  height: auto;
-  padding-top:50px;
+  padding: 0;
+  line-height: 0;
+  margin: 18px 0;
 }
 
-.social-icons svg {
-  width: 50px;
-  height: auto;
+#social li {
+  display: inline-block;
 }
 
-.footer-links {
-  color: #ffffff;
-  font-weight: 700;
+#social a,
+#social a:visited,
+#social a:hover,
+#social a:active,
+#social a:focus {
+  text-decoration: none;
+  color: transparent;
+  line-height: 0%;
 }
 
-.footer-links:hover {
-  color: #ffffff;
-  font-weight: 700;
-  font-style: italic;
+#social img {
+  height: 50px;
+  width: auto;
+  opacity: 0.8;
+  padding: 12px;
+  margin: 0 4px;
 }
+
+
 
 .button {
   display: inline-block;
@@ -258,7 +226,7 @@ main {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255, 127, 80, 0.5);
+  border-top: 1px solid rgba(129, 128, 128, 0.5);
 }
 
 .navtoggle.responsive li:last-child {
@@ -299,12 +267,14 @@ main {
 }
 
 #hero {  
+  
+  /* background-image: url('https://github.com/michael727813/portfolio-website/blob/main/img/bg_image.jpeg?raw=true'); */
   background-image: url('file:///Users/michaelakins/Documents/TRAINING/CareerFoundary/Frontend%20Development%20for%20Designers/Portfolio%20Site%20Michael/img/bg_image.jpeg');
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-size: cover;
   background-color: #f2f2f2;
-  padding: 20px 0;
+  padding: 50px 0;
   display: inline-block;
   width: 100%;
   text-align: center
@@ -328,6 +298,18 @@ main {
 
 .col-sm-12 {
   width: 100%;
+}
+
+@keyframes color-change {
+  from {fill: #F58220;}
+  to {fill: #03577A;}
+}
+.dolphin {
+animation-duration: 4s;
+animation-name: color-change;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: linear;
 }
 
 /* ==============================
@@ -412,19 +394,7 @@ X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {}
 
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
 
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
 
 .sun {
   animation: 4s color-change infinite alternate linear;

@@ -20,15 +20,17 @@
 				<!-- open header div -->
 				<div class="navtoggle" id="myNavtoggle">
 				  <!-- open mobile menu toggle div -->
-				  <a href="index.html" class="logo"><strong>Michael Akins</strong> UX/UI</a>
+				  <a href="index.html">
+					<img src="img/logo.svg" class="logo" alt="Michael Akins UX/UI">
+				  </a>
 				  <!-- Name as hyperlink instead of logo image -->
-				  <nav class="navigation">
+				  <nav>
 					<ul>
 						<li><a class="navLinks" href="index.html">Work</a></li>
 						<li><a class="navLinks" href="about.html">About</a></li>
 						<li><a class="navLinks" href="files/Resume.pdf"
 						  target="_blank" onclick="menuToggle()">Resume</a></li>
-					  <li class="brackets">
+					  <li>
 						<a href="#contact" onclick="menuToggle()">Contact</a></li>
 						<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
 							<i class="fas fa-bars"></i>
@@ -38,12 +40,12 @@
 					</nav>
 				  </div>
 				</div>
-			  </header> <!--End Header-->
+		</header> <!--End Header-->
 		<main>
 			<div id="hero">
-				<div class="container" style="background-image:img_bg_image.jpeg;">
-					<h1>Hi, my name is Michael Akins.<span>I'm a UI/UX designer in Tampa!</span></h1>
-				<p>I’m a UX/UI/Visual designer skilled at empathizing with people and creating user-centric design solutions. I have over 15 years of print and digital/web design experience at in-house creative departments and design firms. I’m passionate about designing for users, and my background in graphic design helps me develop aesthetically pleasing and satisfying product experiences and solutions.</p>
+				<div class="container">
+					<h1 class="white">Hi, my name is Michael Akins.<span>I'm a UI/UX designer in Tampa!</span></h1>
+				<p class="white">I’m a UX/UI/Visual designer skilled at empathizing with people and creating user-centric design solutions. I have over 15 years of print and digital/web design experience at in-house creative departments and design firms. I’m passionate about designing for users, and my background in graphic design helps me develop aesthetically pleasing and satisfying product experiences and solutions.</p>
 			</div>
 		  </div>
 		<!-- For your work/projects -->
@@ -60,7 +62,6 @@
 			</div>
 			<div class="column col-md-6 col-lg-5">
 					<h3>Sneaker Store</h3>
-					<h4>Designing An Online Store</h4>
 					<p><strong>The Problem</strong><br>
 						Users don’t have the time or ability to visit physical stores and would rather buy their goods on the go or from home. Customers prefer convenient ways to perform various tasks that don’t take much of their time.
 						</p>
@@ -81,27 +82,23 @@
 					  <div class="column col-md-6 col-lg-5">
 						<!-- open second column (used for text) -->
 						  <h3>Book&Style</h3>
-						  <h4>Designing a Native IOS App</h4><!-- heading for the project -->
 						  <p><strong>The Problem</strong>
 							<br>There are numerous of competitive salon booking apps on the market that offer a lot of features, but they are very hard to navigate. The experience of booking a good barber or finding a new barbershop can be discouraging and time consuming. Most consumer’s need an app they trust that.</p>
 						<p><strong>The Solution</strong>
 							<br>To solve this problem, I designed Book&Style, a barbershop booking app built for busy, on-to go users that don’t want to spend a lot of time planning their next hair appointment. Book&Style is a native mobile app that can be used to discover new barhops, read reviews, or easily book appointments with your favorite barber.
-						</p><!-- end paragraph -->
+						</p>
 						<a href="#" class="button">View Case Study</a><!-- button or link label -->
 					</div><!-- end second column -->
 				  </div><!-- end row that holds (2) columns for project -->
 				  <div class="row">
 					<div class="column col-sm-12 col-md-6 col-lg-7">
-						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-				viewBox="0 0 799 565.3" style="enable-background:new 0 0 799 565.3;" xml:space="preserve">
-				<style type="text/css">
-							.st0{fill:none;}
-							.st1{fill:#03577A;}
-							.st2{fill:#058D97;}
-							.st3{fill:#F58220;}
-						</style>
-						<g>
-							<path class="st0" d="M424.3,331.3c-0.3,1.4-1.6,2.9-2.9,3.7c-34,22.1-69,42.2-106.5,57.7c-20,8.3-40.7,14-61.8,18.5 c-9.9,2.1-19.7,4.5-29.7,5.8c-6.3,0.8-12.9-0.2-19.3-0.4c-9-0.3-17.9-0.5-26.9-0.9c-1,0-1.9-0.3-2.9-0.5c-0.9,0.2-1.9,0.4-2.9,0.5 c-0.9,0.1-1.8,0-2.7-0.1c3.6,1,7.3,2,11,2.9c23.1,5.6,46.9,6.4,70.6,5.1c23.7-1.3,46.8-5.9,69.7-12.5c30-8.6,58.4-21.1,86.6-34.1 c1.1-0.5,2.3-1,4.5-0.7l0.3,0c8.3-20.6,14-42.1,16.7-65.1C426.9,317.9,425.7,324.6,424.3,331.3z"/>
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 799 565.3" style="enable-background:new 0 0 799 565.3;" xml:space="preserve">
+							<style type="text/css">
+							.st0{fill:none;} .st1{fill:#03577A;}
+							.st2{fill:#058D97;} .st3{fill:#F58220;}
+							</style>
+							<g>
+								<path class="st0" d="M424.3,331.3c-0.3,1.4-1.6,2.9-2.9,3.7c-34,22.1-69,42.2-106.5,57.7c-20,8.3-40.7,14-61.8,18.5 c-9.9,2.1-19.7,4.5-29.7,5.8c-6.3,0.8-12.9-0.2-19.3-0.4c-9-0.3-17.9-0.5-26.9-0.9c-1,0-1.9-0.3-2.9-0.5c-0.9,0.2-1.9,0.4-2.9,0.5 c-0.9,0.1-1.8,0-2.7-0.1c3.6,1,7.3,2,11,2.9c23.1,5.6,46.9,6.4,70.6,5.1c23.7-1.3,46.8-5.9,69.7-12.5c30-8.6,58.4-21.1,86.6-34.1 c1.1-0.5,2.3-1,4.5-0.7l0.3,0c8.3-20.6,14-42.1,16.7-65.1C426.9,317.9,425.7,324.6,424.3,331.3z"/>
 							<path class="st0" d="M656.3,137c-2.5-7.6-3.5-8-11.5-6.1c-4.3,1-8.5,2.6-12.8,3.5c-6.3,5.2-11.4,12.1-15.6,20.1 c3.5-1.9,6.9-3.8,10.5-5.7C636.3,143.9,646.3,140.3,656.3,137z"/>
 							<path class="st0" d="M428.5,308.3c-1.3,1-2.6,2-3.8,2.9c1.2-0.8,2.5-1.5,3.8-2.3C428.4,308.8,428.4,308.5,428.5,308.3z"/>
 							<path class="st1" d="M163.2,383.9c-4.6,3.8-9.1,5-14.8,2.6c-0.6-0.3-1.3-0.5-2-0.8c3.9,2.6,16.5,4.6,18.9,1.9 c2.1-2.5,4.2-5.1,5.8-8c3.3-5.9,5.8-15,4.2-21.9C172.9,368.2,171.1,377.4,163.2,383.9z"/>
@@ -165,20 +162,19 @@
 				   c-0.4,0.6-0.8,1.1-1.3,1.7c1.3,0.7,2.6,1.4,3.8,2.2c6.5,4.2,13.1,8.2,19.4,12.7c11.6,8.2,24,15.5,32,27.9c4.5,7.1,3,11.8-5.1,14.1
 				   c-6.6,1.9-13.6,2.6-19.2,3.6c3.5,3.8,7.5,8.1,11.6,12.5c5.6,6,5.1,11.8-1.9,16.1c-13.9,8.5-29.6,12.6-45.2,16.5
 				   c-6.7,1.7-13.5,3-20.3,4.5c-0.1,0.5-0.2,1.1-0.3,1.6c4.3,1.5,8.4,3.4,12.8,4.4C207,275.3,221.8,278.9,235.8,285.8z"/>
-		   </g>
-		   </svg>
-		  </div>
-		  <div class="column col-md-6 col-lg-5">
-			<h3>Favorite Team Animation</h3>
-			<h4>Miami Dolphins</h4><!-- heading for the project -->
-			<p>The Miami Dolphins are a professional American football team based in the Miami metropolitan area. They compete in the National Football League as a member team of the league's American Football Conference East division.</p>
-  <!-- end paragraph -->
-	  </div><!-- end row that holds (2) columns for project -->
-	</div>
-	</div>
-	</main>
+							</g>
+						</svg>
+					</div>
+					<div class="column col-md-6 col-lg-5">
+						<h3>Favorite Team Animation</h3>
+						<p>The Miami Dolphins are a professional American football team based in the Miami metropolitan area. They compete in the National Football League as a member team of the league's American Football Conference East division.</p>
+					</div>
+				</div><!-- end row that holds (2) columns for project -->
+			</div>
+</div>
+		</main>
 		  <!-- For the footer  -->
- <footer id="contact">
+		<footer id="contact">
 			<div class="container">
 			  <h2>Let’s work together.</h2>
 			<p>
@@ -190,12 +186,12 @@
 			<div id="social">
 				<!--Social Media Layout and Placeholders-->
 			  <ul>
-						  <li><!-- LinkedIn profile -->
-							  <a href="https://www.linkedin.com/in/mrmichaelakins/"target="_blank">  <img src="img/linkedin.png" alt="LinkedIn" class="social-bottom">
-							  </a>
+				  <li><!-- LinkedIn profile -->
+							<a href="https://www.linkedin.com/in/mrmichaelakins" target="_blank"><img src="img/linkedin.png" alt="LinkedIn" class="social-bottom">
+							</a>
 							</li>
 							<li><!-- Twitter Icon -->
-							<a href="https://twitter.com/MrMichaelAkins" target="_blank"> <img src="img/twitter.png" alt="Twitter" class="social-bottom">
+							<a href="https://twitter.com/MrMichaelAkins" target="_blank"><img src="img/twitter.png" alt="Twitter" class="social-bottom">
 							</a>
 						</li>
 				<li><!-- Behance profile -->
@@ -207,10 +203,9 @@
 		  <div><p>Copyright Micihael Akins UX/UI 2021</p>
 			</div>
 			</div>
-			</div>
-			</footer>
-			<script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
-			<script src="js/scripts.js"></script>
+		</footer>
+		<script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
+		<script src="js/scripts.js"></script>
 </body>
 
 </html>
