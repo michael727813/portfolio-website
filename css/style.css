@@ -51,7 +51,7 @@ h4 {
 
 /* general image responsive sizing */
 img {
-  width: 100%;
+  width: 95%;
 }
 
 /* Links */
@@ -78,8 +78,9 @@ footer {
 /* custom logo sizing */
   .logo {
     padding-top: 20px;
-    min-width: 250px;
-    max-width: 300px;
+    position: absolute;
+    min-width: 150px;
+    max-width: 280px;
     height: auto;
   }
 
@@ -161,7 +162,6 @@ main {
 }
 
 
-
 .button {
   display: inline-block;
   background-color: #000;
@@ -213,8 +213,8 @@ main {
   position: absolute;
   right: 0;
   padding-right: 0;
-  top: 20px;
-  font-size: 20px;
+  top: 15px;
+  font-size: 18px;
 }
 
 .navtoggle.responsive nav {
@@ -224,7 +224,6 @@ main {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(129, 128, 128, 0.5);
 }
 
 .navtoggle.responsive li:last-child {
@@ -254,6 +253,7 @@ main {
 background-image: url('https://github.com/michael727813/portfolio-website/blob/main/img/bg_image.jpeg?raw=true');
   background-repeat: no-repeat;
   background-attachment: fixed; 
+  background-position: center;
   background-size: cover;
   background-color: #f2f2f2;
   padding: 50px 0;
@@ -262,13 +262,13 @@ background-image: url('https://github.com/michael727813/portfolio-website/blob/m
   text-align: center
 }
 #hero_sneaker {  
-  
-  background-image: url('https://github.com/michael727813/portfolio-website/blob/main/img/bg_image.jpeg?raw=true');
+  background-image: url('https://github.com/michael727813/portfolio-website/blob/main/img/sneaker/hero_2000px.jpg?raw=true');
     background-repeat: no-repeat;
     background-attachment: fixed; 
+    background-position: center;
     background-size: cover;
     background-color: #f2f2f2;
-    padding: 50px 0;
+    padding: 175px 0;
     display: inline-block;
     width: 100%;
     text-align: center
@@ -278,7 +278,6 @@ background-image: url('https://github.com/michael727813/portfolio-website/blob/m
   text-align: center;
   /* Centers text */
   margin: 0;
-  padding: 0.67em 0;
 }
 
 #hero span {
