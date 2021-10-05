@@ -171,7 +171,15 @@ main {
   padding: 10px;
   transition: 0.4s opacity, 0.5s background-color, 0.4s font-size;
 }
-
+.coming_soon_button{
+  display: inline-block;
+  background-color: #000;
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  pointer-events: none;
+}
 .button:hover {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
